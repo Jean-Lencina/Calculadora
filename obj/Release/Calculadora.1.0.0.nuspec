@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Calculadora</id>
+    <version>1.0.0</version>
+    <authors>Calculadora</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="700febeeebabef94f9202ee87ac975a079a43227" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/calculator_icon-icons.com_72046.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\bin\Release\net8.0-windows\Calculadora.runtimeconfig.json" target="lib\net8.0-windows7.0\Calculadora.runtimeconfig.json" />
+    <file src="C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\bin\Release\net8.0-windows\Calculadora.dll" target="lib\net8.0-windows7.0\Calculadora.dll" />
+    <file src="C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\calculator_icon-icons.com_72046.ico" target="content\calculator_icon-icons.com_72046.ico" />
+    <file src="C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\calculator_icon-icons.com_72046.ico" target="contentFiles\any\net8.0-windows7.0\calculator_icon-icons.com_72046.ico" />
+  </files>
+</package>

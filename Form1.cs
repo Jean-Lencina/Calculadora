@@ -76,7 +76,14 @@ namespace Calculadora
 
         private void btnVirgula_Click(object sender, EventArgs e)
         {
-            textResultado.Text += ",";
+            if (textResultado.Text == "")
+            {
+                textResultado.Text = "0,";
+            }
+            else if (!textResultado.Text.Contains(","))
+            {
+                textResultado.Text += ",";
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -168,30 +175,59 @@ namespace Calculadora
 
         private void btnAdicao_Click(object sender, EventArgs e)
         {
-            OperacaoSelecionada = Operacao.Adicao;
-            Valor = Convert.ToDecimal(textResultado.Text);
-            textResultado.Text = "";
+            if (textResultado.Text != "")
+            {
+                OperacaoSelecionada = Operacao.Adicao;
+                Valor = Convert.ToDecimal(textResultado.Text);
+                textResultado.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
-            OperacaoSelecionada = Operacao.Subtracao;
-            Valor = Convert.ToDecimal(textResultado.Text);
-            textResultado.Text = "";
+            if (textResultado.Text != "")
+            {
+                OperacaoSelecionada = Operacao.Subtracao;
+                Valor = Convert.ToDecimal(textResultado.Text);
+                textResultado.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
-            OperacaoSelecionada = Operacao.Multiplicacao;
-            Valor = Convert.ToDecimal(textResultado.Text);
-            textResultado.Text = "";
+            if (textResultado.Text != "")
+            {
+                OperacaoSelecionada = Operacao.Multiplicacao;
+                Valor = Convert.ToDecimal(textResultado.Text);
+                textResultado.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            OperacaoSelecionada = Operacao.Divisao;
-            Valor = Convert.ToDecimal(textResultado.Text);
-            textResultado.Text = "";
+            if (textResultado.Text != "")
+            {
+                OperacaoSelecionada = Operacao.Divisao;
+                Valor = Convert.ToDecimal(textResultado.Text);
+                textResultado.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
