@@ -249,13 +249,14 @@
             textResultado.BorderStyle = BorderStyle.None;
             textResultado.Font = new Font("Segoe UI", 20F);
             textResultado.ForeColor = SystemColors.WindowText;
-            textResultado.Location = new Point(12, 47);
+            textResultado.Location = new Point(12, 63);
             textResultado.MinimumSize = new Size(50, 50);
             textResultado.Name = "textResultado";
             textResultado.ReadOnly = true;
             textResultado.Size = new Size(297, 50);
             textResultado.TabIndex = 20;
             textResultado.TextAlign = HorizontalAlignment.Right;
+            textResultado.TextChanged += textResultado_TextChanged;
             // 
             // btnMultiplicacao
             // 

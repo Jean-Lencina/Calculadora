@@ -9,9 +9,9 @@ C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.AssemblyInfoInputs.cache
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.AssemblyInfo.cs
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.sourcelink.json
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.dll
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\refint\Calculadora.dll
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.pdb
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.genruntimeconfig.cache
 C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\ref\Calculadora.dll
-C:\Users\INTEGRA\source\repos\Calculadora\Calculadora\obj\Release\net8.0-windows\Calculadora.sourcelink.json

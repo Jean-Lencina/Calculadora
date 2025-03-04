@@ -27,51 +27,71 @@ namespace Calculadora
         private void btnZero_Click(object sender, EventArgs e)
         {
             textResultado.Text += "0";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnUm_Click(object sender, EventArgs e)
         {
             textResultado.Text += "1";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnDois_Click(object sender, EventArgs e)
         {
             textResultado.Text += "2";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnTres_Click(object sender, EventArgs e)
         {
             textResultado.Text += "3";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnQuatro_Click(object sender, EventArgs e)
         {
             textResultado.Text += "4";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnCinco_Click(object sender, EventArgs e)
         {
             textResultado.Text += "5";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnSeis_Click(object sender, EventArgs e)
         {
             textResultado.Text += "6";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnSete_Click(object sender, EventArgs e)
         {
             textResultado.Text += "7";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnOito_Click(object sender, EventArgs e)
         {
             textResultado.Text += "8";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnNove_Click(object sender, EventArgs e)
         {
             textResultado.Text += "9";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnVirgula_Click(object sender, EventArgs e)
@@ -79,10 +99,14 @@ namespace Calculadora
             if (textResultado.Text == "")
             {
                 textResultado.Text = "0,";
+                textResultado.SelectionStart = textResultado.Text.Length;
+                textResultado.Focus();
             }
             else if (!textResultado.Text.Contains(","))
             {
                 textResultado.Text += ",";
+                textResultado.SelectionStart = textResultado.Text.Length;
+                textResultado.Focus();
             }
         }
 
@@ -185,6 +209,8 @@ namespace Calculadora
             {
                 MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e)
@@ -194,11 +220,14 @@ namespace Calculadora
                 OperacaoSelecionada = Operacao.Subtracao;
                 Valor = Convert.ToDecimal(textResultado.Text);
                 textResultado.Text = "";
+
             }
             else
             {
                 MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
@@ -213,6 +242,8 @@ namespace Calculadora
             {
                 MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
@@ -227,7 +258,9 @@ namespace Calculadora
             {
                 MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-                
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
+
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
@@ -265,6 +298,8 @@ namespace Calculadora
             }
 
             textResultado.Text = Resultado.ToString("G29");
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnPorcentagem_Click(object sender, EventArgs e)
@@ -279,6 +314,8 @@ namespace Calculadora
             {
                 MessageBox.Show("Entrada inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnApagarTudo_Click(object sender, EventArgs e)
@@ -287,6 +324,8 @@ namespace Calculadora
             Valor = 0;
             Resultado = 0;
             OperacaoSelecionada = 0;
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnBackspace_Click(object sender, EventArgs e)
@@ -295,11 +334,20 @@ namespace Calculadora
             {
                 textResultado.Text = textResultado.Text.Substring(0, textResultado.Text.Length - 1);
             }
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
             textResultado.Text = "";
+            textResultado.SelectionStart = textResultado.Text.Length;
+            textResultado.Focus();
+        }
+
+        private void textResultado_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
